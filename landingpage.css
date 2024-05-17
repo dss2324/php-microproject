@@ -15,7 +15,7 @@ body{
     position: fixed; /* Change from relative to fixed */
     top: 0;
     left: 0;
-    width: 98%; 
+    width: 100%; 
     z-index: 1000; 
     background-color: #0019ff;
     padding: 10px 20px;

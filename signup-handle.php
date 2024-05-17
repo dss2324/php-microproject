@@ -1,4 +1,5 @@
 <?php
+session_start();
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -36,7 +37,8 @@ if ($result->num_rows > 0) {
             FOREIGN KEY (`user_email`) REFERENCES `signup`(`email`) ON DELETE CASCADE
         )";
         if (mysqli_query($conn, $create_table_query) === true) {
-            header("Location: task_manager.php?message=signup_success");
+            header("Location: landingpage.php?message=signup_success");
+
             exit();
         } else {
             echo "error creating table  ".$conn->error;

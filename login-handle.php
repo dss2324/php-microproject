@@ -1,4 +1,5 @@
 <?php
+session_start();
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -16,10 +17,9 @@ $check_user_query="SELECT * FROM `signup` WHERE `email` ='$email' AND `password`
 $result=mysqli_query($conn,$check_user_query);
 
 if(mysqli_num_rows($result)>0){
-    header("Location:task_manager.php");
-    session_start();
     $_SESSION['email']=$email;
     $_SESSION['password']=$password;
+    header("Location:task_manager2.php");
     exit();
 }
 else{
