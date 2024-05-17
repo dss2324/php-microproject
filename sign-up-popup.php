@@ -29,9 +29,9 @@
                     <label for="password">Enter password</label>
                     <input type="password" name="password" id="password" placeholder="1234" required>
                     <br>
-                    <label for="emp_photo">Upload your Photo(optional)</label>
-                    <input type="image" name="emp_photo" id="emp_photo" src=" ">
-                    <br>
+                    <!-- <label for="emp_photo">Upload your Photo(optional)</label>
+                    <input type="image" name="emp_photo" id="emp_photo" src=" "> -->
+                    <!-- <br> -->
                     <label for="designation">Your Designation</label>
                     <input type="text"  name="designation" id="designation" required>
                     <br>

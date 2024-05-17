@@ -13,7 +13,7 @@
              
         <!--login popup -->
         <div id="loginForm" style="display: none;">
-                <form id="userForm" action="signup-handle.php">
+                <form id="userForm" action="login-handle.php" method="post">
                     <div class="callout" data-closable>
                         <button class="close_login" aria-label="close alert" type="button" id="close_login_btn" data-close>
                             <span aria-hidden="true">&times;</span>
